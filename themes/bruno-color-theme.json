@@ -25,7 +25,6 @@
 		"terminal.ansiBrightMagenta": "#AE81FF", // Mellowed bright magenta
 		"terminal.ansiBrightCyan": "#A1EFE4", // Mellowed bright cyan
 		"terminal.ansiBrightWhite": "#F8F8F2", // Soft bright white
-		
 		// Editor styles
 		"editorCursor.foreground": "#32e30e",
 		"editorError.foreground": "#FF0000", // Bright red for the error squiggly line
@@ -273,6 +272,71 @@
 			"scope": "string.regexp",
 			"settings": {
 				"foreground": "#d16969"
+			}
+		},
+		// Markdown-specific styles
+		{
+			"name": "Markdown headings",
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#00FF7F", // Bright green (SpringGreen) for headings
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown bold",
+			"scope": "markup.bold",
+			"settings": {
+				"foreground": "#FFFFFF", // White color for bold text
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown italic",
+			"scope": "markup.italic",
+			"settings": {
+				"foreground": "#BBBBBB", // Light gray for italic text
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown blockquote",
+			"scope": "markup.quote",
+			"settings": {
+				"foreground": "#87CEEB", // Sky blue for blockquotes
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markdown code blocks",
+			"scope": "markup.inline.raw",
+			"settings": {
+				"foreground": "#FFD700", // Gold color for inline code blocks
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markdown links",
+			"scope": "markup.underline.link",
+			"settings": {
+				"foreground": "#00BFFF", // DeepSkyBlue for links
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Markdown lists",
+			"scope": "markup.list",
+			"settings": {
+				"foreground": "#C586C0", // Light purple for list items
+				"fontStyle": "normal"
+			}
+		},
+		{
+			"name": "Markdown code fences",
+			"scope": "markup.fenced_code.block",
+			"settings": {
+				"foreground": "#FFD700", // Gold color for fenced code blocks
+				"fontStyle": "bold"
 			}
 		},
 		{

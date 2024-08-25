@@ -1,9 +1,21 @@
 {
-  "name": "bruno",
-  "displayName": "bruno",
+  "name": "brunoubutu",
+  "displayName": "brunoubuntu",
   "description": "",
   "version": "0.0.1",
   "publisher": "toberoi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinaoberoi/vscodeTheme.git"
+  },
+  "keywords": [
+    "theme",
+    "dark",
+    "light",
+    "high contrast",
+    "ubuntu",
+    "bruno"
+  ],
   "engines": {
     "vscode": "^1.92.0"
   },

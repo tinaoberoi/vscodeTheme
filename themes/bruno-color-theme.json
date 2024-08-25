@@ -25,6 +25,7 @@
 		"terminal.ansiBrightMagenta": "#AE81FF", // Mellowed bright magenta
 		"terminal.ansiBrightCyan": "#A1EFE4", // Mellowed bright cyan
 		"terminal.ansiBrightWhite": "#F8F8F2", // Soft bright white
+		
 		// Editor styles
 		"editorCursor.foreground": "#32e30e",
 		"editorError.foreground": "#FF0000", // Bright red for the error squiggly line

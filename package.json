@@ -1,0 +1,22 @@
+{
+  "name": "bruno",
+  "displayName": "bruno",
+  "description": "",
+  "version": "0.0.1",
+  "publisher": "toberoi",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "bruno",
+        "uiTheme": "hc-black",
+        "path": "./themes/bruno-color-theme.json"
+      }
+    ]
+  }
+}

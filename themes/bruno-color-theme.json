@@ -2,65 +2,51 @@
 	"name": "bruno",
 	"colors": {
 		"editor.background": "#2C001E",
-		"editor.foreground": "#e3632cf1",
+		"editor.foreground": "#E6E6FA",
+		
+		
 		// Terminal styles with a grayish or translucent background
-		// Terminal styles with a complementary gray background
 		"terminal.background": "#4B3B47", // Gray with subtle purple undertones
-		"terminal.foreground": "#A6E22E", // Mellow green text
-		"terminalCursor.background": "#A6E22E", // Mellow green cursor background
-		"terminalCursor.foreground": "#A6E22E", // Mellow green cursor foreground
-		"terminal.ansiBlack": "#2E2E2E", // Slightly darker gray for black
-		"terminal.ansiRed": "#D16969", // Muted red for errors
-		"terminal.ansiGreen": "#A6E22E", // Mellow green for success messages
-		"terminal.ansiYellow": "#E6DB74", // Muted yellow for warnings
-		"terminal.ansiBlue": "#66D9EF", // Muted blue for informational messages
-		"terminal.ansiMagenta": "#AE81FF", // Muted magenta
-		"terminal.ansiCyan": "#A1EFE4", // Muted cyan
-		"terminal.ansiWhite": "#F8F8F2", // Soft white for general text
-		"terminal.ansiBrightBlack": "#75715E", // Bright gray for bright black
-		"terminal.ansiBrightRed": "#F92672", // Mellowed bright red
-		"terminal.ansiBrightGreen": "#A6E22E", // Mellowed bright green
-		"terminal.ansiBrightYellow": "#E6DB74", // Mellowed bright yellow
-		"terminal.ansiBrightBlue": "#66D9EF", // Mellowed bright blue
-		"terminal.ansiBrightMagenta": "#AE81FF", // Mellowed bright magenta
-		"terminal.ansiBrightCyan": "#A1EFE4", // Mellowed bright cyan
-		"terminal.ansiBrightWhite": "#F8F8F2", // Soft bright white
+
 		// Editor styles
 		"editorCursor.foreground": "#32e30e",
+
+		// Errors and warnings
 		"editorError.foreground": "#FF0000", // Bright red for the error squiggly line
-		"editorError.border": "#FF4500", // A strong orange-red border for errors
+		"editorError.border": "#FF0000", // A strong red border for errors
+
 		// Active tab styles
 		"tab.activeBackground": "#2E2E2E", // Dark gray for active tab background
 		"tab.activeForeground": "#FFFFFF", // Keep text white for good contrast
 		"tab.inactiveBackground": "#3B1F35", // Lighter gray or purple for inactive tabs
 		"tab.inactiveForeground": "#BBBBBB", // Light gray text for inactive tabs
-		// "tab.activeBorder": "#E95420",           // Bright Orange for border emphasis
-		// "tab.activeBorderTop": "#E95420",        // Bright Orange top border
-		// Inactive tab styles
+
 		// Unfocused tabs
 		"tab.unfocusedActiveBackground": "#2E2E2E", // Dark gray for unfocused active tab
 		"tab.unfocusedInactiveBackground": "#3B1F35", // Darker gray for unfocused inactive tabs
 		"tab.unfocusedActiveForeground": "#BBBBBB", // Light gray text for unfocused active tab
 		"tab.unfocusedInactiveForeground": "#777777", // Dimmed text for unfocused inactive tabs
+
 		// Explorer / Files area styles
 		"sideBar.background": "#3B1F35", // Lighter background color for the Explorer panel
 		"sideBar.foreground": "#E0E0E0", // Foreground (text) color for file and folder names
 		"sideBar.border": "#440530", // Border color for the Explorer panel
 		"sideBarSectionHeader.background": "#573C50", // Background color of section headers in the sidebar
 		"sideBarSectionHeader.foreground": "#FFFFFF", // Text color of section headers
-		"list.activeSelectionBackground": "#673320", // Background color of selected/active item
+		"list.activeSelectionBackground": "#4B3B47", // Muted purple background for selected/active item
 		"list.activeSelectionForeground": "#FFFFFF", // Text color of selected/active item
 		"list.inactiveSelectionBackground": "#573C50", // Background color of selected item when inactive
 		"list.inactiveSelectionForeground": "#BBBBBB", // Text color of selected item when inactive
-		"list.hoverBackground": "#673320", // Background color when hovering over items
+		"list.hoverBackground": "#4B3B47", // Muted purple background when hovering over items
 		"list.hoverForeground": "#FFFFFF", // Text color when hovering over items
-		"list.focusBackground": "#E95420", // Background color for focused item
+		"list.focusBackground": "#5A4E61", // Slightly lighter purple for focused item
 		"list.focusForeground": "#FFFFFF", // Text color for focused item
-		"list.highlightForeground": "#FFD700", // Text color for highlighted items (e.g., matched search results)
-		"list.dropBackground": "#573C30", // Background color when dragging an item over another item
+		"list.highlightForeground": "#66D9EF", // Muted blue for highlighted items (e.g., matched search results)
+		"list.dropBackground": "#573C50", // Background color when dragging an item over another item
 		"tree.indentGuidesStroke": "#BBBBBB", // Color of the indentation guides in the file tree
 		"tree.tableColumnsBorder": "#573C50", // Border color for table columns (if used in Explorer)
 		"tree.tableOddRowsBackground": "#3B1F35" // Background for odd rows in the tree view
+
 	},
 	"tokenColors": [
 		{
@@ -91,7 +77,7 @@
 		{
 			"scope": "comment",
 			"settings": {
-				"foreground": "#6A9955"
+				"foreground": "#7A7A7A"
 			}
 		},
 		{
@@ -108,7 +94,7 @@
 				"support.constant.color"
 			],
 			"settings": {
-				"foreground": "#290ccc"
+				"foreground": "#9370DB"
 			}
 		},
 		{
@@ -510,6 +496,30 @@
 			"settings": {
 				"foreground": "#CE9178"
 			}
-		}
+		},
+		// Class and Struct Member Access
+		{
+			"name": "Class/Struct Member Access",
+			"scope": [
+				"variable.other.property.ts",   // TypeScript/JavaScript class property access
+				"variable.other.property.js",   // JavaScript class property access
+				"variable.other.property.python", // Python class/struct property access
+				"variable.other.member.cpp"     // C++ struct/class member access
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		// Global Variable Definitions
+		{
+			"name": "Global Variable Definitions",
+			"scope": [
+				"variable.other.readwrite.global", // Common for global variables
+				"meta.definition.variable.name"   // Variable name in definition
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},	
 	]
 }

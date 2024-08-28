@@ -1,34 +1,27 @@
 {
 	"name": "bruno",
 	"colors": {
-		"editor.background": "#2C001E",
+		"editor.background": "#3B1F35",
 		"editor.foreground": "#E6E6FA",
-		
-		
 		// Terminal styles with a grayish or translucent background
 		"terminal.background": "#4B3B47", // Gray with subtle purple undertones
-
 		// Editor styles
 		"editorCursor.foreground": "#32e30e",
-
 		// Errors and warnings
 		"editorError.foreground": "#FF0000", // Bright red for the error squiggly line
 		"editorError.border": "#FF0000", // A strong red border for errors
-
 		// Active tab styles
 		"tab.activeBackground": "#2E2E2E", // Dark gray for active tab background
 		"tab.activeForeground": "#FFFFFF", // Keep text white for good contrast
 		"tab.inactiveBackground": "#3B1F35", // Lighter gray or purple for inactive tabs
 		"tab.inactiveForeground": "#BBBBBB", // Light gray text for inactive tabs
-
 		// Unfocused tabs
 		"tab.unfocusedActiveBackground": "#2E2E2E", // Dark gray for unfocused active tab
 		"tab.unfocusedInactiveBackground": "#3B1F35", // Darker gray for unfocused inactive tabs
 		"tab.unfocusedActiveForeground": "#BBBBBB", // Light gray text for unfocused active tab
 		"tab.unfocusedInactiveForeground": "#777777", // Dimmed text for unfocused inactive tabs
-
 		// Explorer / Files area styles
-		"sideBar.background": "#3B1F35", // Lighter background color for the Explorer panel
+		"sideBar.background": "#2C001E", // Lighter background color for the Explorer panel
 		"sideBar.foreground": "#E0E0E0", // Foreground (text) color for file and folder names
 		"sideBar.border": "#440530", // Border color for the Explorer panel
 		"sideBarSectionHeader.background": "#573C50", // Background color of section headers in the sidebar
@@ -46,7 +39,6 @@
 		"tree.indentGuidesStroke": "#BBBBBB", // Color of the indentation guides in the file tree
 		"tree.tableColumnsBorder": "#573C50", // Border color for table columns (if used in Explorer)
 		"tree.tableOddRowsBackground": "#3B1F35" // Background for odd rows in the tree view
-
 	},
 	"tokenColors": [
 		{
@@ -501,10 +493,10 @@
 		{
 			"name": "Class/Struct Member Access",
 			"scope": [
-				"variable.other.property.ts",   // TypeScript/JavaScript class property access
-				"variable.other.property.js",   // JavaScript class property access
+				"variable.other.property.ts", // TypeScript/JavaScript class property access
+				"variable.other.property.js", // JavaScript class property access
 				"variable.other.property.python", // Python class/struct property access
-				"variable.other.member.cpp"     // C++ struct/class member access
+				"variable.other.member.cpp" // C++ struct/class member access
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -515,11 +507,11 @@
 			"name": "Global Variable Definitions",
 			"scope": [
 				"variable.other.readwrite.global", // Common for global variables
-				"meta.definition.variable.name"   // Variable name in definition
+				"meta.definition.variable.name" // Variable name in definition
 			],
 			"settings": {
 				"fontStyle": "bold"
 			}
-		},	
+		},
 	]
 }
